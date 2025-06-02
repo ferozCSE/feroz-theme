@@ -14,7 +14,8 @@
 
 <!-- wp:cover {"customOverlayColor":"#f5f7fa","minHeight":34,"minHeightUnit":"rem","isDark":false,"align":"full","className":"hero-pattern"} -->
 <div class="wp-block-cover alignfull is-light hero-pattern" style="min-height:34rem">
-    <span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim" style="background-color:#f5f7fa"></span>
+    <span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim"
+        style="background-color:#f5f7fa"></span>
     <div class="wp-block-cover__inner-container">
 
         <!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
@@ -28,7 +29,7 @@
 
                     <!-- wp:heading {"level":1,"textColor":"text-primary","className":"wp-block-heading"} -->
                     <h1 class="wp-block-heading has-text-primary-color has-text-color">
-                        The Right Digital Solutions for your Business
+                        <?php esc_html_e( 'The Right Digital Solutions for your Business', 'feroz' ); ?>
                     </h1>
                     <!-- /wp:heading -->
 
@@ -38,7 +39,7 @@
 
                     <!-- wp:paragraph {"textColor":"text-primary"} -->
                     <p class="has-text-primary-color has-text-color">
-                        We offer high speed, unparalleled security and 24/7 support.
+                        <?php esc_html_e( 'We offer high speed, unparalleled security and 24/7 support.', 'feroz' ); ?>
                     </p>
                     <!-- /wp:paragraph -->
 
@@ -50,16 +51,19 @@
                     <div class="wp-block-buttons">
                         <!-- wp:button -->
                         <div class="wp-block-button">
-                            <a class="wp-block-button__link wp-element-button">
-                                Request demo
+                            <a href="<?php echo esc_url(wp_login_url()); ?>"
+                                class="wp-block-button__link wp-element-button">
+                                <?php echo esc_html__('Request demo', 'feroz'); ?>
                             </a>
                         </div>
                         <!-- /wp:button -->
 
                         <!-- wp:button {"textColor":"black","style":{"color":{"background":"#ebeefc"},"border":{"radius":"3px"}},"className":"is-style-fill"} -->
                         <div class="wp-block-button is-style-fill">
-                            <a class="wp-block-button__link has-black-color has-text-color has-background wp-element-button" style="border-radius:3px;background-color:#ebeefc">
-                                Schedule call
+                            <a href="<?php echo esc_url(wp_login_url()); ?>"
+                                class="wp-block-button__link has-black-color has-text-color has-background wp-element-button"
+                                style="border-radius:3px;background-color:#ebeefc">
+                                <?php echo esc_html__('Schedule call', 'feroz'); ?>
                             </a>
                         </div>
                         <!-- /wp:button -->
@@ -73,7 +77,8 @@
                 <div class="wp-block-column is-vertically-aligned-center">
                     <!-- wp:image {"sizeSlug":"full","className":"rounded-xl overflow-hidden shadow-2xl"} -->
                     <figure class="wp-block-image size-full rounded-xl overflow-hidden shadow-2xl">
-                        <img src="<?php echo  get_stylesheet_directory_uri() . '/images/bannar1.png'; ?>" alt="Digital Solutions Illustration" />
+                        <img src="<?php echo  get_stylesheet_directory_uri() . '/images/bannar1.png'; ?>"
+                            alt="Digital Solutions Illustration" />
                     </figure>
                     <!-- /wp:image -->
                 </div>

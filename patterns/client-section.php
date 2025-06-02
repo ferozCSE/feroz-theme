@@ -19,18 +19,21 @@
     style="background-color:#f2f4f8;padding-top:5rem;padding-right:1.25rem;padding-bottom:5rem;padding-left:1.25rem">
     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#2563eb"},"elements":{"link":{"color":{"text":"#2563eb"}}},"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"fontSize":"medium"} -->
     <p class="has-text-align-center has-text-color has-link-color has-medium-font-size"
-        style="color:#2563eb;letter-spacing:0.1em;text-transform:uppercase"><strong>Our Trusted Partners</strong></p>
+        style="color:#2563eb;letter-spacing:0.1em;text-transform:uppercase">
+        <strong><?php esc_html_e( 'Our Trusted Partners', 'feroz' ); ?></strong></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:heading {"textAlign":"center","level":1,"style":{"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}},"spacing":{"margin":{"top":"1rem"}}}} -->
     <h1 class="wp-block-heading has-text-align-center has-text-color has-link-color"
-        style="color:#1f2937;margin-top:1rem"><strong>Companies We\'ve Worked With</strong></h1>
+        style="color:#1f2937;margin-top:1rem">
+        <strong><?php esc_html_e( 'Companies We\'ve Worked With', 'feroz' ); ?></strong>
+    </h1>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"1rem","bottom":"4rem"}},"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}}},"fontSize":"medium","fontFamily":"sans"} -->
     <p class="has-text-align-center has-text-color has-link-color has-sans-font-family has-medium-font-size"
-        style="color:#1f2937;margin-top:1rem;margin-bottom:4rem">We’ve partnered with some of the most innovative and
-        leading companies to bring the best solutions to you.</p>
+        style="color:#1f2937;margin-top:1rem;margin-bottom:4rem"><?php esc_html_e( 'We’ve partnered with some of the most innovative and
+        leading companies to bring the best solutions to you.', 'feroz' ); ?></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group {"align":"wide","className":"logo-scroll-container","style":{"border":{"top":{"color":"#e5e7eb","width":"1px"},"right":[],"bottom":{"color":"#e5e7eb","width":"1px"},"left":[]},"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->

@@ -18,12 +18,14 @@
     style="background-color:#f3f4f6;padding-top:5rem;padding-right:0rem;padding-bottom:5rem;padding-left:0rem">
     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#2563eb"},"elements":{"link":{"color":{"text":"#2563eb"}}},"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"fontSize":"medium"} -->
     <p class="has-text-align-center has-text-color has-link-color has-medium-font-size"
-        style="color:#2563eb;letter-spacing:0.1em;text-transform:uppercase"><strong>Our Team</strong></p>
+        style="color:#2563eb;letter-spacing:0.1em;text-transform:uppercase">
+        <strong><?php esc_html_e( 'Our Team', 'feroz' ); ?></strong>
+    </p>
     <!-- /wp:paragraph -->
 
     <!-- wp:heading {"textAlign":"center","level":1,"style":{"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}},"spacing":{"margin":{"top":"1rem"}}}} -->
     <h1 class="wp-block-heading has-text-align-center has-text-color has-link-color"
-        style="color:#1f2937;margin-top:1rem"><strong>Meet The Experts</strong></h1>
+        style="color:#1f2937;margin-top:1rem"><strong><?php esc_html_e( 'Meet The Experts', 'feroz' ); ?></strong></h1>
     <!-- /wp:heading -->
 
     <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"2rem","bottom":"0rem"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
@@ -48,12 +50,14 @@
                 <div class="wp-block-group">
                     <!-- wp:heading {"textAlign":"center","level":3,"className":"image-section","style":{"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}},"spacing":{"margin":{"top":"1rem","bottom":"0"}}},"fontSize":"medium"} -->
                     <h3 class="wp-block-heading has-text-align-center image-section has-text-color has-link-color has-medium-font-size"
-                        style="color:#1f2937;margin-top:1rem;margin-bottom:0"><strong>John Doe</strong></h3>
+                        style="color:#1f2937;margin-top:1rem;margin-bottom:0">
+                        <strong><?php esc_html_e( 'John Doe', 'feroz' ); ?></strong>
+                    </h3>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4b5563"},"elements":{"link":{"color":{"text":"#4b5563"}}},"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
                     <p class="has-text-align-center has-text-color has-link-color has-small-font-size"
-                        style="color:#4b5563;margin-top:0.5rem">CEO</p>
+                        style="color:#4b5563;margin-top:0.5rem"><?php esc_html_e( 'CEO', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -104,10 +108,12 @@
                     <!-- wp:buttons {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","justifyContent":"center","verticalAlignment":"center"}} -->
                     <div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--50)">
                         <!-- wp:button {"className":"member-card-button","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"0.7rem","bottom":"0.7rem"}},"color":{"gradient":"linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%)"},"border":{"radius":"2rem"}}} -->
-                        <div class="wp-block-button member-card-button"><a
+                        <div class="wp-block-button member-card-button"><a href="<?php echo esc_url(wp_login_url()); ?>"
                                 class="wp-block-button__link has-background wp-element-button"
-                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">Contact
-                                John</a></div>
+                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">
+                                <?php echo esc_html__('Contact John', 'feroz'); ?>
+                            </a>
+                        </div>
                         <!-- /wp:button -->
                     </div>
                     <!-- /wp:buttons -->
@@ -134,12 +140,14 @@
                 <div class="wp-block-group">
                     <!-- wp:heading {"textAlign":"center","level":3,"className":"image-section","style":{"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}},"spacing":{"margin":{"top":"1rem","bottom":"0"}}},"fontSize":"medium"} -->
                     <h3 class="wp-block-heading has-text-align-center image-section has-text-color has-link-color has-medium-font-size"
-                        style="color:#1f2937;margin-top:1rem;margin-bottom:0"><strong>John Doe</strong></h3>
+                        style="color:#1f2937;margin-top:1rem;margin-bottom:0">
+                        <strong><?php esc_html_e( 'John Doe', 'feroz' ); ?></strong>
+                    </h3>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4b5563"},"elements":{"link":{"color":{"text":"#4b5563"}}},"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
                     <p class="has-text-align-center has-text-color has-link-color has-small-font-size"
-                        style="color:#4b5563;margin-top:0.5rem">CEO</p>
+                        style="color:#4b5563;margin-top:0.5rem"><?php esc_html_e( 'CEO', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -190,10 +198,13 @@
                     <!-- wp:buttons {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","justifyContent":"center","verticalAlignment":"center"}} -->
                     <div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--50)">
                         <!-- wp:button {"className":"member-card-button","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"0.7rem","bottom":"0.7rem"}},"color":{"gradient":"linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%)"},"border":{"radius":"2rem"}}} -->
-                        <div class="wp-block-button member-card-button"><a
+                        <div class="wp-block-button member-card-button">
+                            <a href="<?php echo esc_url(wp_login_url()); ?>"
                                 class="wp-block-button__link has-background wp-element-button"
-                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">Contact
-                                John</a></div>
+                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">
+                                <?php echo esc_html__('Contact John', 'feroz'); ?>
+                            </a>
+                        </div>
                         <!-- /wp:button -->
                     </div>
                     <!-- /wp:buttons -->
@@ -220,12 +231,14 @@
                 <div class="wp-block-group">
                     <!-- wp:heading {"textAlign":"center","level":3,"className":"image-section","style":{"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}},"spacing":{"margin":{"top":"1rem","bottom":"0"}}},"fontSize":"medium"} -->
                     <h3 class="wp-block-heading has-text-align-center image-section has-text-color has-link-color has-medium-font-size"
-                        style="color:#1f2937;margin-top:1rem;margin-bottom:0"><strong>John Doe</strong></h3>
+                        style="color:#1f2937;margin-top:1rem;margin-bottom:0">
+                        <strong><?php esc_html_e( 'John Doe', 'feroz' ); ?></strong>
+                    </h3>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4b5563"},"elements":{"link":{"color":{"text":"#4b5563"}}},"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
                     <p class="has-text-align-center has-text-color has-link-color has-small-font-size"
-                        style="color:#4b5563;margin-top:0.5rem">CEO</p>
+                        style="color:#4b5563;margin-top:0.5rem"><?php esc_html_e( 'CEO', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -276,10 +289,13 @@
                     <!-- wp:buttons {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","justifyContent":"center","verticalAlignment":"center"}} -->
                     <div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--50)">
                         <!-- wp:button {"className":"member-card-button","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"0.7rem","bottom":"0.7rem"}},"color":{"gradient":"linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%)"},"border":{"radius":"2rem"}}} -->
-                        <div class="wp-block-button member-card-button"><a
+                        <div class="wp-block-button member-card-button">
+                            <a href="<?php echo esc_url(wp_login_url()); ?>"
                                 class="wp-block-button__link has-background wp-element-button"
-                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">Contact
-                                John</a></div>
+                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">
+                                <?php echo esc_html__('Contact John', 'feroz'); ?>
+                            </a>
+                        </div>
                         <!-- /wp:button -->
                     </div>
                     <!-- /wp:buttons -->
@@ -306,12 +322,14 @@
                 <div class="wp-block-group">
                     <!-- wp:heading {"textAlign":"center","level":3,"className":"image-section","style":{"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}},"spacing":{"margin":{"top":"1rem","bottom":"0"}}},"fontSize":"medium"} -->
                     <h3 class="wp-block-heading has-text-align-center image-section has-text-color has-link-color has-medium-font-size"
-                        style="color:#1f2937;margin-top:1rem;margin-bottom:0"><strong>John Doe</strong></h3>
+                        style="color:#1f2937;margin-top:1rem;margin-bottom:0">
+                        <strong><?php esc_html_e( 'John Doe', 'feroz' ); ?></strong>
+                    </h3>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4b5563"},"elements":{"link":{"color":{"text":"#4b5563"}}},"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
                     <p class="has-text-align-center has-text-color has-link-color has-small-font-size"
-                        style="color:#4b5563;margin-top:0.5rem">CEO</p>
+                        style="color:#4b5563;margin-top:0.5rem"><?php esc_html_e( 'CEO', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|50","left":"var:preset|spacing|50"},"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
@@ -362,10 +380,13 @@
                     <!-- wp:buttons {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}},"layout":{"type":"flex","justifyContent":"center","verticalAlignment":"center"}} -->
                     <div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--50)">
                         <!-- wp:button {"className":"member-card-button","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"0.7rem","bottom":"0.7rem"}},"color":{"gradient":"linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%)"},"border":{"radius":"2rem"}}} -->
-                        <div class="wp-block-button member-card-button"><a
+                        <div class="wp-block-button member-card-button">
+                            <a href="<?php echo esc_url(wp_login_url()); ?>"
                                 class="wp-block-button__link has-background wp-element-button"
-                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">Contact
-                                John</a></div>
+                                style="border-radius:2rem;background:linear-gradient(135deg,rgb(59,130,246) 2%,rgb(99,102,241) 100%);padding-top:0.7rem;padding-right:1rem;padding-bottom:0.7rem;padding-left:1rem">
+                                <?php echo esc_html__('Contact John', 'feroz'); ?>
+                            </a>
+                        </div>
                         <!-- /wp:button -->
                     </div>
                     <!-- /wp:buttons -->

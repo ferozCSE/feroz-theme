@@ -14,36 +14,43 @@
 <!-- wp:group {"style":{"color":{"gradient":"linear-gradient(135deg,rgb(74,85,104) 0%,rgb(102,105,110) 100%)","text":"#f7fafc"},"elements":{"link":{"color":{"text":"#f7fafc"}}},"spacing":{"padding":{"top":"1.5rem"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-text-color has-background has-link-color"
     style="color:#f7fafc;background:linear-gradient(135deg,rgb(74,85,104) 0%,rgb(102,105,110) 100%);padding-top:1.5rem">
-    <!-- wp:group {"align":"full","className":"footer-container","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50","top":"var:preset|spacing|50"}},"border":{"radius":"0.38rem"}},"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group alignfull footer-container"
+    <!-- wp:group {"align":"wide","className":"footer-container","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|50","top":"var:preset|spacing|50"}},"border":{"radius":"0.38rem"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide footer-container"
         style="border-radius:0.38rem;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
         <!-- wp:columns -->
         <div class="wp-block-columns">
-            <!-- wp:column {"width":"220px"} -->
-            <div class="wp-block-column" style="flex-basis:220px">
-                <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <!-- wp:column {"width":"240px"} -->
+            <div class="wp-block-column" style="flex-basis:240px">
+                <!-- wp:group {"layout":{"type":"default"}} -->
                 <div class="wp-block-group">
-                    <!-- wp:heading {"level":6,"style":{"typography":{"writingMode":"horizontal-tb","textTransform":"capitalize"},"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"large"} -->
-                    <h6 class="wp-block-heading has-large-font-size"
-                        style="margin-bottom:1rem;text-transform:capitalize;writing-mode:horizontal-tb">Services</h6>
-                    <!-- /wp:heading -->
+                    <!-- wp:paragraph {"align":"left"} -->
+                    <p class="has-text-align-left"> Services</p>
+                    <!-- /wp:paragraph -->
 
-                    <!-- wp:list {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
-                    <ul style="margin-top:0.5rem" class="wp-block-list has-small-font-size">
+                    <!-- wp:list {"className":"footer-listitem","style":{"spacing":{"margin":{"top":"0.5rem","left":"0"},"padding":{"right":"0","left":"0"}}},"fontSize":"small"} -->
+                    <ul style="margin-top:0.5rem;margin-left:0;padding-right:0;padding-left:0"
+                        class="wp-block-list footer-listitem has-small-font-size">
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a>Branding</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/branding' ) ); ?>">Branding</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a></a><a>Design</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/design' ) ); ?>">Design</a>
+                        </li>
+                        <!-- /wp:list-item -->
+                        <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/marketing' ) ); ?>">Marketing</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a>Marketing</a></li>
-                        <!-- /wp:list-item -->
-
-                        <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a></a><a>Advertisement</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/advertisement' ) ); ?>">Advertisement</a>
+                        </li>
                         <!-- /wp:list-item -->
                     </ul>
                     <!-- /wp:list -->
@@ -52,33 +59,39 @@
             </div>
             <!-- /wp:column -->
 
-            <!-- wp:column {"width":"220px"} -->
-            <div class="wp-block-column" style="flex-basis:220px">
-                <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <!-- wp:column {"width":"240px"} -->
+            <div class="wp-block-column" style="flex-basis:240px">
+                <!-- wp:group {"layout":{"type":"default"}} -->
                 <div class="wp-block-group">
-                    <!-- wp:heading {"level":6,"style":{"typography":{"writingMode":"horizontal-tb","textTransform":"capitalize"},"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"large"} -->
-                    <h6 class="wp-block-heading has-large-font-size"
-                        style="margin-bottom:1rem;text-transform:capitalize;writing-mode:horizontal-tb">
-                        <strong>Company</strong>
-                    </h6>
-                    <!-- /wp:heading -->
+                    <!-- wp:paragraph {"align":"left"} -->
+                    <p class="has-text-align-left"><strong>Company</strong></p>
+                    <!-- /wp:paragraph -->
 
-                    <!-- wp:list {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
-                    <ul style="margin-top:0.5rem" class="wp-block-list has-small-font-size">
+                    <!-- wp:list {"className":"footer-listitem","style":{"spacing":{"margin":{"top":"0.5rem","left":"0"},"padding":{"right":"0","left":"0"}}},"fontSize":"small"} -->
+                    <ul style="margin-top:0.5rem;margin-left:0;padding-right:0;padding-left:0"
+                        class="wp-block-list footer-listitem has-small-font-size">
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a>About Us</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/about' ) ); ?>">About Us</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a>Contact</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Contact</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a>Jobs</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/jobs' ) ); ?>">Jobs</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a>Press Kit</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/press-kit' ) ); ?>">Press Kit</a>
+                        </li>
                         <!-- /wp:list-item -->
                     </ul>
                     <!-- /wp:list -->
@@ -87,29 +100,33 @@
             </div>
             <!-- /wp:column -->
 
-            <!-- wp:column {"width":"220px"} -->
-            <div class="wp-block-column" style="flex-basis:220px">
-                <!-- wp:group {"layout":{"type":"constrained"}} -->
+            <!-- wp:column {"width":"240px","layout":{"type":"constrained"}} -->
+            <div class="wp-block-column" style="flex-basis:240px">
+                <!-- wp:group {"layout":{"type":"default"}} -->
                 <div class="wp-block-group">
-                    <!-- wp:heading {"level":6,"style":{"typography":{"writingMode":"horizontal-tb","textTransform":"capitalize"},"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"large"} -->
-                    <h6 class="wp-block-heading has-large-font-size"
-                        style="margin-bottom:1rem;text-transform:capitalize;writing-mode:horizontal-tb">
-                        <strong>Legal</strong>
-                    </h6>
-                    <!-- /wp:heading -->
+                    <!-- wp:paragraph {"align":"left"} -->
+                    <p class="has-text-align-left"><strong>Legal</strong></p>
+                    <!-- /wp:paragraph -->
 
-                    <!-- wp:list {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
-                    <ul style="margin-top:0.5rem" class="wp-block-list has-small-font-size">
+                    <!-- wp:list {"className":"footer-listitem","style":{"spacing":{"margin":{"top":"0.5rem","left":"0"},"padding":{"right":"0","left":"0"}}},"fontSize":"small"} -->
+                    <ul style="margin-top:0.5rem;margin-left:0;padding-right:0;padding-left:0"
+                        class="wp-block-list footer-listitem has-small-font-size">
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a></a><a>Terms of use</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/terms' ) ); ?>">Terms of use</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a></a><a>Privacy policy</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/privacy' ) ); ?>">Privacy Policy</a>
+                        </li>
                         <!-- /wp:list-item -->
 
                         <!-- wp:list-item {"className":"footer-listitem","fontSize":"small"} -->
-                        <li class="footer-listitem has-small-font-size"><a></a><a>Cookie policy</a></li>
+                        <li class="footer-listitem has-small-font-size">
+                            <a href="<?php echo esc_url( home_url( '/cookie' ) ); ?>">Cookie Policy</a>
+                        </li>
                         <!-- /wp:list-item -->
                     </ul>
                     <!-- /wp:list -->
@@ -125,12 +142,13 @@
                     <!-- wp:heading {"level":6,"style":{"typography":{"writingMode":"horizontal-tb","textTransform":"capitalize"},"spacing":{"margin":{"bottom":"1rem"}}},"fontSize":"large"} -->
                     <h6 class="wp-block-heading has-large-font-size"
                         style="margin-bottom:1rem;text-transform:capitalize;writing-mode:horizontal-tb">
-                        <strong>Newsletter</strong>
+                        <strong><?php esc_html_e( 'Newsletter', 'feroz' ); ?></strong>
                     </h6>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"fontSize":"small"} -->
-                    <p class="has-small-font-size">Enter your email address to get the latest updates.</p>
+                    <p class="has-small-font-size">
+                        <?php esc_html_e( 'Enter your email address to get the latest updates.', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -146,7 +164,7 @@
                             <!-- wp:button {"textAlign":"left","textColor":"base","className":"footer-btn","style":{"typography":{"writingMode":"horizontal-tb"},"color":{"background":"#2563eb"},"spacing":{"padding":{"left":"1rem","right":"1rem","top":"0.5rem","bottom":"0.5rem"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"border":{"radius":"0.5rem"}}} -->
                             <div class="wp-block-button footer-btn" style="writing-mode:horizontal-tb"><a
                                     class="wp-block-button__link has-base-color has-text-color has-background has-link-color has-text-align-left wp-element-button"
-                                    style="border-radius:0.5rem;background-color:#2563eb;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem">Subscribe</a>
+                                    style="border-radius:0.5rem;background-color:#2563eb;padding-top:0.5rem;padding-right:1rem;padding-bottom:0.5rem;padding-left:1rem"><?php esc_html_e( 'Subscribe', 'feroz' ); ?></a>
                             </div>
                             <!-- /wp:button -->
                         </div>
@@ -162,9 +180,9 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"2.5rem","bottom":"2.5rem"}},"color":{"background":"#1f2937"}},"layout":{"type":"constrained"}} -->
+    <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"1.5rem","bottom":"1.5rem"}},"color":{"background":"#1f2937"}},"layout":{"type":"default"}} -->
     <div class="wp-block-group alignfull has-background"
-        style="background-color:#1f2937;padding-top:2.5rem;padding-right:1rem;padding-bottom:2.5rem;padding-left:1rem">
+        style="background-color:#1f2937;padding-top:1.5rem;padding-right:1rem;padding-bottom:1.5rem;padding-left:1rem">
         <!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group">
             <!-- wp:columns -->
@@ -172,8 +190,9 @@
                 <!-- wp:column -->
                 <div class="wp-block-column">
                     <!-- wp:paragraph {"align":"left","fontSize":"small"} -->
-                    <p class="has-text-align-left has-small-font-size">©&nbsp;2025&nbsp;- All rights reserved by Coders
-                        Time</p>
+                    <p class="has-text-align-left has-small-font-size">
+                        <?php esc_html_e( '©&nbsp;2025&nbsp;- All rights reserved by Coders Time', 'feroz' ); ?>
+                    </p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:column -->
@@ -199,7 +218,7 @@
                             </li>
                             <!-- /wp:necessary-block/social-share -->
 
-                            <!-- wp:necessary-block/social-share {"url":null,"description":"Enhance the Excellence","service":"instagram","showLabels":true} -->
+                            <!-- wp:necessary-block/social-share {"description":"Enhance the Excellence","service":"instagram","showLabels":true} -->
                             <li class="wp-block-necessary-block-social-share wp-social-share wp-block-social-share wp-social-share-instagram has-icon-color-color has-icon-background-color-background-color"
                                 data-share="instagram">
                                 <div class="wp-block-social-share-anchor"><svg width="24" height="24"
@@ -213,7 +232,7 @@
                             </li>
                             <!-- /wp:necessary-block/social-share -->
 
-                            <!-- wp:necessary-block/social-share {"url":null,"description":"Enhance the Excellence","service":"linkedin","showLabels":true} -->
+                            <!-- wp:necessary-block/social-share {"description":"Enhance the Excellence","service":"linkedin","showLabels":true} -->
                             <li class="wp-block-necessary-block-social-share wp-social-share wp-block-social-share wp-social-share-linkedin has-icon-color-color has-icon-background-color-background-color"
                                 data-share="linkedin">
                                 <div class="wp-block-social-share-anchor"><svg width="24" height="24"

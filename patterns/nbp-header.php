@@ -15,34 +15,39 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"
     style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-    <div class="wp-block-group">
+    <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+    <div class="wp-block-group alignwide">
         <!-- wp:site-logo {"width":50} /-->
 
         <!-- wp:paragraph -->
-        <p>NBP</p>
+        <p><?php esc_html_e( 'NBP', 'feroz' ); ?></p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group {"layout":{"type":"constrained","justifyContent":"right"}} -->
         <div class="wp-block-group">
-            <!-- wp:navigation {"ref":4212,"align":"wide","layout":{"type":"flex","justifyContent":"center"}} /-->
+            <!-- wp:navigation {"ref":4212,"align":"wide","className":"navber-menu","layout":{"type":"flex","justifyContent":"center"}} /-->
         </div>
         <!-- /wp:group -->
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons">
             <!-- wp:button {"className":"is-style-outline login-button","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}},"color":{"text":"#356dd7"},"elements":{"link":{"color":{"text":"#356dd7"}}}}} -->
-            <div class="wp-block-button is-style-outline login-button"><a
+            <div class="wp-block-button is-style-outline login-button">
+                <a href="<?php echo esc_url(wp_login_url('/login')); ?>"
                     class="wp-block-button__link has-text-color has-link-color wp-element-button"
-                    style="color:#356dd7;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)">Login</a>
+                    style="color:#356dd7;padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40)">
+                    <?php echo esc_html__('Login', 'feroz'); ?>
+                </a>
             </div>
             <!-- /wp:button -->
 
             <!-- wp:button {"className":"header-button2","style":{"color":{"gradient":"linear-gradient(135deg,rgb(20,184,166) 0%,rgb(5,150,105) 100%)"},"spacing":{"padding":{"left":"var:preset|spacing|20","right":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
-            <div class="wp-block-button header-button2"><a
+            <div class="wp-block-button header-button2">
+                <a href="<?php echo esc_url(wp_login_url()); ?>"
                     class="wp-block-button__link has-background wp-element-button"
-                    style="background:linear-gradient(135deg,rgb(20,184,166) 0%,rgb(5,150,105) 100%);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">Start
-                    Free Trial</a></div>
+                    style="background:linear-gradient(135deg,rgb(20,184,166) 0%,rgb(5,150,105) 100%);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><?php echo esc_html__('Free for Trial', 'feroz'); ?>
+                </a>
+            </div>
             <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->

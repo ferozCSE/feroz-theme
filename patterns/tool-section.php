@@ -19,17 +19,19 @@
     style="background:linear-gradient(135deg,rgb(59,130,246) 0%,rgb(254,202,202) 100%);padding-top:5rem;padding-right:1.25rem;padding-bottom:5rem;padding-left:1.25rem">
     <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#2563eb"},"typography":{"textTransform":"uppercase","letterSpacing":"0.1em"}},"fontSize":"medium"} -->
     <p class="has-text-align-center has-text-color has-medium-font-size"
-        style="color:#2563eb;letter-spacing:0.1em;text-transform:uppercase"><strong>The tools you need</strong></p>
+        style="color:#2563eb;letter-spacing:0.1em;text-transform:uppercase">
+        <strong><?php esc_html_e( 'The tools you need', 'feroz' ); ?></strong>
+    </p>
     <!-- /wp:paragraph -->
     <!-- wp:heading {"textAlign":"center","level":1,"style":{"color":{"text":"#1f2937"},"spacing":{"margin":{"top":"1rem"}}}} -->
     <h1 class="wp-block-heading has-text-align-center has-text-color" style="color:#1f2937;margin-top:1rem">
-        <strong>All-in-One Solution for Your Projects</strong>
+        <strong><?php esc_html_e( 'All-in-One Solution for Your Projects', 'feroz' ); ?></strong>
     </h1>
     <!-- /wp:heading -->
     <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"1rem","bottom":"4rem"}},"color":{"text":"#1f2937"},"elements":{"link":{"color":{"text":"#1f2937"}}}},"fontSize":"medium","fontFamily":"sans"} -->
     <p class="has-text-align-center has-text-color has-link-color has-sans-font-family has-medium-font-size"
-        style="color:#1f2937;margin-top:1rem;margin-bottom:4rem">Power up your workflow with the most reliable and
-        scalable development tools.</p>
+        style="color:#1f2937;margin-top:1rem;margin-bottom:4rem"><?php esc_html_e( 'Power up your workflow with the most reliable and
+        scalable development tools.', 'feroz' ); ?></p>
     <!-- /wp:paragraph -->
     <!-- wp:columns {"align":"full","style":{"spacing":{"margin":{"bottom":"0rem"},"blockGap":{"top":"0","left":"var:preset|spacing|40"}}}} -->
     <div class="wp-block-columns alignfull" style="margin-bottom:0rem">
@@ -48,12 +50,15 @@
                     <!-- wp:heading {"level":3,"textAlign":"center","textColor":"gray-900","fontSize":"medium"} -->
                     <h3
                         class="wp-block-heading has-text-align-center has-gray-900-color has-text-color has-medium-font-size">
-                        <strong>Customizable Settings</strong>
+                        <strong><?php esc_html_e( 'Customizable
+                            Settings', 'feroz' ); ?></strong>
                     </h3>
                     <!-- /wp:heading -->
                     <!-- wp:paragraph {"align":"center","textColor":"gray-600","fontSize":"small","style":{"spacing":{"margin":{"top":"0.75rem"}}}} -->
                     <p class="has-text-align-center has-gray-600-color has-text-color has-small-font-size"
-                        style="margin-top:0.75rem">Connect to cloud services with ease and flexibility.</p>
+                        style="margin-top:0.75rem">
+                        <?php esc_html_e( 'Connect to cloud services
+                        with ease and flexibility.', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -76,12 +81,14 @@
                     <!-- wp:heading {"level":3,"textAlign":"center","textColor":"gray-900","fontSize":"medium"} -->
                     <h3
                         class="wp-block-heading has-text-align-center has-gray-900-color has-text-color has-medium-font-size">
-                        <strong>Developer-Friendly</strong>
+                        <strong><?php esc_html_e( 'Developer-Friendly', 'feroz' ); ?></strong>
                     </h3>
                     <!-- /wp:heading -->
                     <!-- wp:paragraph {"align":"center","textColor":"gray-600","fontSize":"small","style":{"spacing":{"margin":{"top":"0.75rem"}}}} -->
                     <p class="has-text-align-center has-gray-600-color has-text-color has-small-font-size"
-                        style="margin-top:0.75rem">Optimized for developers with clean and efficient code.</p>
+                        style="margin-top:0.75rem">
+                        <?php esc_html_e( 'Optimized for developers with
+                        clean and efficient code.', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -104,12 +111,14 @@
                     <!-- wp:heading {"level":3,"textAlign":"center","textColor":"gray-900","fontSize":"medium"} -->
                     <h3
                         class="wp-block-heading has-text-align-center has-gray-900-color has-text-color has-medium-font-size">
-                        <strong>Responsive Design</strong>
+                        <strong><?php esc_html_e( 'Responsive Design', 'feroz' ); ?></strong>
                     </h3>
                     <!-- /wp:heading -->
                     <!-- wp:paragraph {"align":"center","textColor":"gray-600","fontSize":"small","style":{"spacing":{"margin":{"top":"0.75rem"}}}} -->
                     <p class="has-text-align-center has-gray-600-color has-text-color has-small-font-size"
-                        style="margin-top:0.75rem">Build tools that look great on any device and screen size.</p>
+                        style="margin-top:0.75rem">
+                        <?php esc_html_e( 'Build tools that look great
+                        on any device and screen size.', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -132,12 +141,15 @@
                     <!-- wp:heading {"level":3,"textAlign":"center","textColor":"gray-900","fontSize":"medium"} -->
                     <h3
                         class="wp-block-heading has-text-align-center has-gray-900-color has-text-color has-medium-font-size">
-                        <strong>Cloud Integration</strong>
+                        <strong><?php esc_html_e( 'Cloud
+                            Integration', 'feroz' ); ?></strong>
                     </h3>
                     <!-- /wp:heading -->
                     <!-- wp:paragraph {"align":"center","textColor":"gray-600","fontSize":"small","style":{"spacing":{"margin":{"top":"0.75rem"}}}} -->
                     <p class="has-text-align-center has-gray-600-color has-text-color has-small-font-size"
-                        style="margin-top:0.75rem">Seamlessly connect with cloud services for better productivity.</p>
+                        style="margin-top:0.75rem">
+                        <?php esc_html_e( 'Seamlessly connect with cloud
+                        services for better productivity.', 'feroz' ); ?></p>
                     <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
@@ -151,9 +163,10 @@
     <div class="wp-block-buttons">
         <!-- wp:button {"style":{"color":{"background":"#2563eb"},"spacing":{"padding":{"top":"0.75rem","bottom":"0.75rem","left":"2rem","right":"2rem"}}}} -->
         <div class="wp-block-button">
-            <a class="wp-block-button__link has-background wp-element-button"
-                style="background-color:#2563eb;padding-top:0.75rem;padding-bottom:0.75rem;padding-left:2rem;padding-right:2rem">🚀
-                Explore More</a>
+            <a href="<?php echo esc_url(wp_login_url()); ?>"
+                class="wp-block-button__link has-background wp-element-button"
+                style="background-color:#2563eb;padding-top:0.75rem;padding-bottom:0.75rem;padding-left:2rem;padding-right:2rem"><?php echo esc_html__('🚀
+                Explore More', 'feroz'); ?></a>
         </div>
         <!-- /wp:button -->
     </div>
